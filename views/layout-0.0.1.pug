@@ -1,0 +1,24 @@
+
+
+//
+  ### Teamtreehouse: Flashcard
+  - `filename`: layout.pug
+  - `stack` : Node.js, Express
+  - `description` : Team Treehouse Practice.  Use Node.js, and express to create a flashcard app
+  - `code` : 6428
+  - `author` : jcruzaxaeon
+
+doctype html
+html(lang="en")
+  head
+    title Flashcards
+  body
+    include includes/header.pug
+    if name
+      h2 Welcome to Axeaon, #{name}!
+      include includes/goodbye.pug
+    //
+      Lets Pug know that any templates extending this layout can inject HTML @ `block content`
+    block content
+    include includes/footer.pug
+

@@ -1,0 +1,27 @@
+
+
+extends layout.pug
+
+block content
+  section.namecard
+    .namecard-hello
+      p.namecard-greeting Welcome, #{name}!
+      form.namecard-exit(action='/goodbye' method='POST')
+        button(type='submit')
+          img(src='/static/img/close.svg')
+  section.flashcards
+    .card.card-question
+      .card-header
+      h1.card-title #{side}
+      #content
+        h2 #{text}
+        if hint
+          p#hint
+            i Hint: #{hint}
+      .card-flip-wrap
+        a(href=`http://localhost:3000/cards/${id}/?side=${flip}`)
+          img.card-flip(src='/static/img/flip.svg')
+      .card-next
+        a(href='http://localhost:3000/cards/')
+          img(src='/static/img/next.svg')
+

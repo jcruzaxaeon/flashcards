@@ -1,0 +1,9 @@
+extends layout 
+
+block content 
+  h1= `${error.messge} - Status: ${error.status}`
+  img.desk-items(src='/static/img/desk.svg')
+  a.button-primary-small(href='/') Home 
+  .paper 
+    pre.stack-trace= error.stack 
+  .tear

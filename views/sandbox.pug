@@ -1,0 +1,43 @@
+
+
+//
+  ### Teamtreehouse: Flashcard
+  - `filename`: sandbox.pug
+  - `stack` : Node.js, Express
+  - `description` : Team Treehouse Practice.  Use Node.js, and express to create a flashcard app
+  - `code` : 6428
+  - `author` : jcruzaxaeon
+
+//
+  ### Pug Variable Syntax
+  - `tagname= {variable inner HTML}`
+  - e.g. `h1= varName`
+  - Variable must be defined in `app.js`
+
+doctype html
+html(lang="en")
+  head
+    title Flash Cards
+    //
+      (!!!) `tagname.`-syntax can be followed by any arbitrary text (e.g. literal HTML)
+    style.
+      table, th, td { border: 1px solid black }
+  body
+    header
+      h1 Flash Cards
+    section#content
+      //table(style="border-style: solid; border-width: 1px;")
+      table
+        thead 
+          th Prompt
+          th Hint
+        tbody 
+          each card in cardData
+            tr
+              td= card.prompt
+              td= card.hint
+    //
+      else
+        p (There is no hint)
+    footer
+      p an <code>axaeon</code> study app

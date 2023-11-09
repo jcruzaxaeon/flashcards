@@ -9,7 +9,7 @@
 - `author` : jcruzaxaeon
 - `knownBugs`: { 
       '0001': 'Investigate body-parser error',
-      '0002': 'Cards available without "login".  Create error checking redirects.'
+      '0002': 'Cards available without "login".  Create error-checking redirects.'
    }
 -------------------------------------------------------------------------------------------------*/
 
@@ -21,6 +21,9 @@
 const express = require('express');              // Dependency: require "express"
 const cookieParser = require('cookie-parser');
 const app = express('public');
+
+const PORT = process.env.PORT; //3000
+const DOMAIN = process.env.DOMAIN; //flashcards-jcruz-axaeon.onrender.com
 
 /*
 ### Load Static Assets
@@ -44,6 +47,8 @@ app.set('view engine', 'pug');
 -------------------------------------------------------------------------------------------------*/
 const mainRoutes = require('./routes'); // No filename in call since "index.js" is default-target
 const cardRoutes = require('./routes/cards'); // Must include filename
+req.domain = DOMAIN;
+console.log(req.domain);
 
 app.use(mainRoutes);
 

@@ -42,7 +42,9 @@
 
 ### Devlog
 
-#### {Insert Date Here}
+#### November 8, 2023
+- [x] Update .gitignore - Remove `design/` from git-tracking.  Used `$ git rm -r --cached design`.
+- [x] Push to GitHub
 
 ### Notes
 

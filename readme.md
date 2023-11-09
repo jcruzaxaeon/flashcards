@@ -1,17 +1,19 @@
 
 
 # Flashcards
-
+By jcruz as Team Treehouse (Code Academy) practice
 
 ## Development Tool Roster
 - `text-editor` : VSCode
 - nodemon
+- `workstation`: Windows 11 > WSL2 > Linux: Debian 10 
+- cookie-parser
+- Pug
 
 ## Deployment Tool Roster
 - `hosting`: render.com
 - `centralRepo`: GitHub
-- `server`: GreenGeeks, Linux Terminal, linuxDistroPlaceholder
-- `workstation`: Windows 11, WSL2, Debian(Linux)
+
 
 ## Stack
 - Node.js

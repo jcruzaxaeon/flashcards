@@ -4,10 +4,14 @@
 
 
 ## Development Tool Roster
+- `text-editor` : VSCode
+- nodemon
 
 ## Deployment Tool Roster
 - `hosting`: render.com
-- ``
+- `centralRepo`: GitHub
+- `server`: GreenGeeks, Linux Terminal, linuxDistroPlaceholder
+- `workstation`: Windows 11, WSL2, Debian(Linux)
 
 ## Stack
 - Node.js
@@ -67,8 +71,7 @@
 
 ### Tool Roster
 Tools Used, Dependencies, Requires, Packages
-- `text-editor` : VSCode
-- nodemon
+
 - cookie-parser
 - Pug
 - express

@@ -47,8 +47,6 @@ app.set('view engine', 'pug');
 -------------------------------------------------------------------------------------------------*/
 const mainRoutes = require('./routes'); // No filename in call since "index.js" is default-target
 const cardRoutes = require('./routes/cards'); // Must include filename
-req.domain = DOMAIN;
-console.log(req.domain);
 
 app.use(mainRoutes);
 

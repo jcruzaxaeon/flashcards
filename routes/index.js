@@ -14,6 +14,8 @@ const router = express.Router();
 -------------------------------------------------------------------------------------------------*/
 router.get('/', (req, res) => {
   const name = req.cookies.username;
+  req.domain = DOMAIN;
+  console.log(req.domain);
 
   // Redirects
   if(name)   res.render   ('index', { name });

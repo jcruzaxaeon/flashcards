@@ -1,6 +1,12 @@
 
 
 # Flashcards
+
+## Development Tool Roster
+
+## Deployment Tool Roster
+
+## Metadata
 - `version` : 0.0.1
 - `student` : jcruzaxaeon
 - `organizationOfStudent` : Team Treehouse

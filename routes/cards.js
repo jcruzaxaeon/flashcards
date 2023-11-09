@@ -39,7 +39,7 @@ router.get('/:id', (req, res) => {
 
    // (!!!) Return stops execution avoiding redirect
    if(side!=='question' && side!='answer') {
-      return res.redirect(`http://localhost:3000/cards/${id}/?side=question`);
+      return res.redirect(`http://${req.domain}/cards/${id}/?side=question`);
    }
 
    if(side===flip) {
@@ -57,7 +57,7 @@ router.get('/:id', (req, res) => {
 router.get('/', (req, res) => { 
    const cardId = Math.floor(Math.random() * cards.length);
 
-   res.redirect(`http://localhost:3000/cards/${cardId}/?side=question`);
+   res.redirect(`http://${req.domain}/cards/${cardId}/?side=question`);
 });
 
 // //(V1) .render object

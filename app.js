@@ -23,7 +23,6 @@ const cookieParser = require('cookie-parser');
 const app = express('public');
 
 const PORT = process.env.PORT; //3000
-const DOMAIN = process.env.DOMAIN; //flashcards-jcruz-axaeon.onrender.com
 
 /*
 ### Load Static Assets
@@ -73,7 +72,8 @@ app.use( (req, res, next) => {
 -------------------------------------------------------------------------------------------------*/
 app.use( (err, req, res, next) => {
    res.locals.error = err;
-   res.status(err.status);
+   const status = err.status || 500;
+   res.status(status);
    res.render('error');
 });
 

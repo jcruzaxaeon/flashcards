@@ -14,7 +14,7 @@ const router = express.Router();
 -------------------------------------------------------------------------------------------------*/
 router.get('/', (req, res) => {
   const name = req.cookies.username;
-  req.domain = DOMAIN;
+  req.domain = process.env.DOMAIN; //flashcards-jcruz-axaeon.onrender.com
   console.log(req.domain);
 
   // Redirects

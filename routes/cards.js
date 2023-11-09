@@ -39,7 +39,7 @@ router.get('/:id', (req, res) => {
 
    // (!!!) Return stops execution avoiding redirect
    if(side!=='question' && side!='answer') {
-      return res.redirect(`http://${req.domain}:3000/cards/${id}/?side=question`);
+      return res.redirect(`https://${req.domain}/cards/${id}/?side=question`);
    }
 
    if(side===flip) {
@@ -61,7 +61,7 @@ router.get('/', (req, res) => {
    res.cookie('domain', req.domain);
    console.log(req.domain);
 
-   res.redirect(`http://${req.domain}:3000/cards/${cardId}/?side=question`);
+   res.redirect(`https://${req.domain}/cards/${cardId}/?side=question`);
 });
 
 // //(V1) .render object

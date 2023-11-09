@@ -81,6 +81,6 @@ app.use( (err, req, res, next) => {
 ### Development-Server
 -------------------------------------------------------------------------------------------------*/
 app.listen(3000, () => {
-   console.log('Flashcard is running on: localhost:3000');
+   console.log('Flashcard is running on: Port 3000');
 });
 

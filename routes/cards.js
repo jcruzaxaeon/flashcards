@@ -57,6 +57,10 @@ router.get('/:id', (req, res) => {
 router.get('/', (req, res) => { 
    const cardId = Math.floor(Math.random() * cards.length);
 
+   req.domain = process.env.DOMAIN; //flashcards-jcruz-axaeon.onrender.com
+   res.cookie('domain', req.domain);
+   console.log(req.domain);
+
    res.redirect(`http://${req.domain}/cards/${cardId}/?side=question`);
 });
 

@@ -2,9 +2,16 @@
 
 # Flashcards
 
+
 ## Development Tool Roster
 
 ## Deployment Tool Roster
+- `hosting`: render.com
+- ``
+
+## Stack
+- Node.js
+- Express
 
 ## Metadata
 - `version` : 0.0.1

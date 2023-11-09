@@ -58,8 +58,6 @@ router.get('/', (req, res) => {
    const cardId = Math.floor(Math.random() * cards.length);
 
    req.domain = process.env.DOMAIN; //flashcards-jcruz-workshop.onrender.com
-   res.cookie('domain', req.domain);
-   console.log(req.domain);
 
    res.redirect(`https://${req.domain}/cards/${cardId}/?side=question`);
 });

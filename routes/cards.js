@@ -34,6 +34,9 @@ router.get('/:id', (req, res) => {
    let flipLabel = 'Question';
    let sideLabel = 'Answer';
 
+   req.domain = process.env.DOMAIN; //flashcards-jcruz-axaeon.onrender.com
+   res.cookie('domain', req.domain);
+
    // (!!!) Return stops execution avoiding redirect
    if(side!=='question' && side!='answer') {
       return res.redirect(`http://localhost:3000/cards/${id}/?side=question`);
